@@ -23,12 +23,12 @@ ol {
     line-height: 145%;
 }
 
-img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    vertical-align: top;
-}
+// img {
+//     max-width: 100%;
+//     width: 100%;
+//     height: auto;
+//     vertical-align: top;
+// }
 
 a {
     font-size: 16px;
@@ -50,28 +50,28 @@ h1 {
     font-size: 6vw;
     line-height: 142%;
     color: $text_regular_white;
-    font-weight: light;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
 h2 {
     font-size: 32px;
     line-height: 142%;
-    color: $text_regular_black;
+    color: $text_regular_dark;
     font-weight: light;
 }
 
 h3 {
     font-size: 24px;
     line-height: 142%;
-    color: $text_regular_black;
+    color: $text_regular_dark;
     font-weight: bold;
 }
 
 h4 {
     font-size: 16px;
     line-height: 142%;
-    color: $text_regular_black;
+    color: $text_regular_dark;
     font-weight: bold;
 }
 
