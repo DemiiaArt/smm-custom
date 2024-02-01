@@ -13,9 +13,9 @@ export default function HeroSection() {
           <h1>Сучасна професія</h1>
           <p>Знахідка для тих, хто хоче заробляти в телефоні</p>
           <div className="bubbles">
-            <Bubble />
-            <Bubble />
-            <Bubble />
+            <Bubble text="Підійде для новачків" size="130px" />
+            <Bubble text="Вільний графік " size="105px" />
+            <Bubble text="Різні напрямки" size="120px" />
           </div>
         </div>
       </div>

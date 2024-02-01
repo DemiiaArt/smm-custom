@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import HeroSection from './Components/HeroSection/HeroSection.jsx';
-import Header from './Containers/header/Header.jsx'
+import Header from './Containers/Header/Header.jsx'
 
 function App() {
   return (
