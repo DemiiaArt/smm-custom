@@ -96,6 +96,12 @@ h4 {
     }
 }
 
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
 .unactive {
     font-weight: light;
     color: $text_disabled;
@@ -105,4 +111,10 @@ h4 {
     background: $text_accent;
     background-clip: text;
     color: transparent;
+}
+
+.coursive {
+    font-family: 'Caveat', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 108%;
 }
