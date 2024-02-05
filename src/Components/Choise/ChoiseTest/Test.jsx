@@ -1,41 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import buttonImg from "./button.png"
 
-const TestCard = ({ question, options, onNext, onAnswer }) => {
-  const [selectedOption, setSelectedOption] = useState(null);
+const TestCard = ({ question, options, onNext, onAnswer, currentCard }) => {
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
 
-  const handleOptionChange = (e) => {
-    setSelectedOption(e.target.value);
+  useEffect(() => {
+    setSelectedOptionIndex(null);
+  }, [currentCard]);
+
+  const handleOptionChange = (index) => {
+    setSelectedOptionIndex(index);
+    // console.dir(e.target);
+    // console.log(+e.target.value);
   };
 
   const handleNext = () => {
+    const selectedOption = selectedOptionIndex !== null ? options[selectedOptionIndex].count : null; 
     onAnswer(selectedOption);
     onNext();
   };
 
   return (
-    <div>
-      <h2>Щоб підібрати для Вас найоптимальніший варіант, пройдіть невеличкий тест:</h2>
-      <div className="questionBox">
-        <h4>{question}</h4>
-        <form>
-          {options.map((option, index) => (
-            <div key={index}>
-              <input
-                type="radio"
-                id={`option-${index}`}
-                name="options"
-                value={option}
-                checked={selectedOption === option}
-                onChange={handleOptionChange}
-              />
-              <label htmlFor={`option-${index}`}>{option}</label>
-            </div>
-          ))}
-        </form>
-        <button onClick={handleNext} disabled={!selectedOption}>
-          <img src="./button.png" alt="button" />
-        </button>
-      </div>
+    <div className="questionBox">
+      <h4>{question}</h4>
+      <form>
+        {options.map((option, index) => (
+          <div key={index}>
+            <input
+              type="radio"
+              id={`option-${currentCard}-${index}`}
+              name={`options-${currentCard}`}
+              value={option.count}
+              checked={selectedOptionIndex  === index}
+              onChange={() => handleOptionChange(index)}
+            />
+            <label htmlFor={`option-${currentCard}-${index}`}>{option.text}</label>
+          </div>
+        ))}
+      </form>
+      <button className="NextButton" onClick={handleNext} disabled={selectedOptionIndex ===null}>
+        <img src={buttonImg} alt="button"/>
+      </button>
     </div>
   );
 };

@@ -18,15 +18,15 @@ export default function HeroSection() {
             <source
               type="image/png"
               media="(max-width: 767px)"
-              srcset={`${heroImg375_1x} 1x, ${heroImg375_2x} 2x`}
+              srcSet={`${heroImg375_1x} 1x, ${heroImg375_2x} 2x`}
             />
             <source
               media="(min-width: 768px) and (max-width: 991px)"
-              srcset={`${heroImg768_1x} 1x, ${heroImg768_2x} 2x`}
+              srcSet={`${heroImg768_1x} 1x, ${heroImg768_2x} 2x`}
             />
             <source
               media="(min-width: 992px)"
-              srcset={`${heroImg1280_1x} 1x, ${heroImg1280_2x} 2x`}
+              srcSet={`${heroImg1280_1x} 1x, ${heroImg1280_2x} 2x`}
             />
             <img src={heroImg} alt="phone"></img>
           </picture>
