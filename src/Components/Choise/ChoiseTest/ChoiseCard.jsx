@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Test from "./Test.jsx";
+import "./ChoiseCard.scss";
+import rightArrow from "./ArrowRight.png";
+import leftArrow from "./ArrowLeft.png";
 
-const ChoiseCard = () => {
+const ChoiseCard = ({onChoise}) => {
   const [currentCard, setCurrentCard] = useState(0);
 
   const questions = [
@@ -24,7 +27,7 @@ const ChoiseCard = () => {
       question: "3. Чи подобається Вам спілкуватись з людьми?",
       options: [
         { text: "так", count: 1 },
-        { text: "віддаю перевагу роботі без контакту з людьми", count: -1 },
+        { text: "ні", count: -1 },
         { text: "залежить від обставин", count: 0 },
       ],
     },
@@ -43,16 +46,24 @@ const ChoiseCard = () => {
     });
   };
 
-  const resultTest = answers.reduce(((summ, item) => summ += item), 0)
+  
+  const resultTest = answers.reduce((summ, item) => (summ += item), 0);
+
+  useEffect(() => {
+    if (currentCard >= questions.length) {
+      const resultTest = answers.reduce((summ, item) => (summ += item), 0);
+      onChoise(resultTest > 0 ? "Kurator" : "Tasks");
+    }
+  }, [currentCard, answers, onChoise, questions.length]);
 
   return (
-    <div>
+    <div className="testCard">
       {currentCard < questions.length ? (
         <div>
-          <h2>
+          <h5>
             Щоб підібрати для Вас найоптимальніший варіант, пройдіть невеличкий
             тест:
-          </h2>
+          </h5>
           <Test
             question={questions[currentCard].question}
             options={questions[currentCard].options}
@@ -63,9 +74,24 @@ const ChoiseCard = () => {
         </div>
       ) : (
         <div>
-          <h2>
-          За результатами опитування для Вас підійде напрямок <strong> {resultTest > 0 ? `Кураторство обо Інста-магазин!` : `Заробітку на завданнях!`} </strong>
-          </h2>
+          <h5>
+            За результатами опитування для Вас підійде напрямок{" "}
+            <span className="boldText">
+              {" "}
+              {resultTest > 0
+                ? `Кураторство обо Інста-магазин!`
+                : `Заробітку на завданнях!`}{" "}
+            </span>
+          </h5>
+          <br />
+          <p className="h5">Ознайомитись із ним детальніше можна </p>
+          <div className="arrows">
+            {resultTest > 0 ? (
+              <img src={rightArrow} alt="Кураторство або Інста-магазин" />
+            ) : (
+              <img src={leftArrow} alt="Заробіток на завданнях" />
+            )}
+          </div>
         </div>
       )}
     </div>

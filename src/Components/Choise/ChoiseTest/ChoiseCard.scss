@@ -1,0 +1,49 @@
+@import "../../../Theme/variables.scss";
+
+.testCard {
+    // margin: 0 20px;
+    background: $white;
+    padding: 20px 20px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .arrows {
+        img {
+            width: 100px;
+        }
+
+        [alt^="Кураторство"] {
+            float: right;
+        }
+
+        [alt^="Заробіток"] {
+            float: left;
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .testCard {
+        padding: 30px 60px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .testCard {
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .testCard {
+        width: 860px;
+        margin: 0 auto;
+
+        .arrows {
+            img {
+                width: 140px;
+            }
+        }
+    }
+}

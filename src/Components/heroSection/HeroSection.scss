@@ -67,7 +67,7 @@
 
 @media (min-width: 480px) {
     .heroLayout {
-        padding: 70px 0;
+        padding: 70px 0 40px;
 
         h1 {
             width: 50vw;
@@ -82,7 +82,7 @@
 
 @media (min-width: 768px) {
     .heroLayout {
-        padding: 100px 0;
+        padding: 100px 0 50px;
         width: 61vw;
 
         h1 {
@@ -100,7 +100,7 @@
 
 @media (min-width: 992px) {
     .heroLayout {
-        padding: 130px 0;
+        padding: 130px 0 50px;
         width: 61vw;
 
         .coursive {
@@ -113,7 +113,7 @@
 
 @media (min-width: 1280px) {
     .heroLayout {
-        padding: 180px 0;
+        padding: 180px 0 50px;
         width: 780px;
 
         .coursive {

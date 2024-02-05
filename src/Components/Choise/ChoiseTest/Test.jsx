@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import buttonImg from "./button.png"
+// import buttonImgDisabled from "./buttonDisabled.png"
+
+import "./Test.scss"
 
 const TestCard = ({ question, options, onNext, onAnswer, currentCard }) => {
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
