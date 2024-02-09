@@ -54,7 +54,7 @@ const ChoiseCard = ({onChoise}) => {
       const resultTest = answers.reduce((summ, item) => (summ += item), 0);
       onChoise(resultTest > 0 ? "Kurator" : "Tasks");
     }
-  }, [currentCard, answers, onChoise, questions.length]);
+  }, [currentCard, answers, questions.length]);
 
   return (
     <div className="testCard">
