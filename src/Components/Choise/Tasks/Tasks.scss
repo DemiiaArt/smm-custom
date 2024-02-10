@@ -1,0 +1,39 @@
+.benefits--row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items:first baseline;
+
+    li {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media (min-width: 480px) {
+    .benefits--row {
+        li {
+            width: calc((100% - 20px) / 3);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .benefits--row {
+        // display: flex;
+        flex-wrap: nowrap;
+        // justify-content: space-between;
+        gap: 20px;
+        align-items: baseline;
+    
+        li {
+            width: calc(100% / 5);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .benefits--row {
+        gap: 30px;
+    }
+}

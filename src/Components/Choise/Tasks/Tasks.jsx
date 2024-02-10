@@ -22,8 +22,8 @@ export default function Tasks() {
           {benefitsTasks.map((item) => (
             <Benefits
               icon={item.icon}
-              iconWidth={item.iconWidth}
-              iconHeight={item.iconHeight}
+              fontSiz={item.fontSiz}
+              fontSizWindow={item.fontSizWindow}
               text={item.text}
               key={item.id}
             />

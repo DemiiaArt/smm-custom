@@ -1,0 +1,38 @@
+@import "../../Theme/variables.scss";
+
+.benefits__card {
+    border: 3px solid transparent;
+    border-image: $bg_accent1;
+    border-image-slice: 1;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    &--bg {
+        background: $white;
+        margin: -3px;
+        border-radius: 20px;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            font-weight: bold;
+            margin: 10px 0 0;
+            font-size: 12px;
+            line-height: 140%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .benefits__card {
+        &--bg {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
