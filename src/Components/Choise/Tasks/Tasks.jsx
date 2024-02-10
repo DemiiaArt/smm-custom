@@ -8,6 +8,7 @@ import phones from "./two_phones.png";
 import games from "./games.png";
 import reviews from "./reviews.js";
 import questions from "./questions.js";
+import benefitsTasks from "./benefits.js";
 
 export default function Tasks() {
   return (
@@ -17,13 +18,17 @@ export default function Tasks() {
           Ми з командою зібрали в одному каналі перевірені фріланс-сайти, котрі
           дійсно платять за виконання завдань.
         </h3>
-        <div className="benefits--row">
-          <Benefits />
-          <Benefits />
-          <Benefits />
-          <Benefits />
-          <Benefits />
-        </div>
+        <ul className="benefits--row">
+          {benefitsTasks.map((item) => (
+            <Benefits
+              icon={item.icon}
+              iconWidth={item.iconWidth}
+              iconHeight={item.iconHeight}
+              text={item.text}
+              key={item.id}
+            />
+          ))}
+        </ul>
       </section>
       <section className="flex-center">
         <h2>Приклади завдань</h2>
