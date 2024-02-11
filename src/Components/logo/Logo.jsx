@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from './Demiia.Design.svg'
+import logo from './Demiia.Design.svg';
+import "./Logo.scss"
 
 export default function Logo() {
   return (

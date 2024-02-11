@@ -1,0 +1,75 @@
+@import "../../Theme/variables.scss";
+
+.revCard {
+    border: 3px solid $text_regular_dark;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    .revName {
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .revText {
+        font-size: 16px;
+        margin: 10px 10px;
+        flex-grow: 1;
+        // text-align: start;
+    }
+
+    .revImgBox {
+        position: relative;
+        padding-top: 100%;
+
+        img {
+            max-width: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            inset: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .revCard {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media (min-width: 768px) {
+    .revCard {
+        width: 100%;
+        flex-direction: row;
+
+        .revName {
+            width: 150px;
+        }
+
+        .revText {
+            // font-size: 16px;
+            // margin: 10px 10px;
+            flex-grow: 0;
+            text-align: start;
+        }
+
+        .revImgBox {
+            position: relative;
+            padding-right: 150px;
+            padding-top: 0;
+    
+            img {
+                max-width: none;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                inset: 0;
+                object-fit: cover;
+            }
+        }
+    }
+}

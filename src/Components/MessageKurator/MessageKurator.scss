@@ -1,0 +1,30 @@
+@import "../../Theme/variables.scss";
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+    background: $bg_accent2;
+    border-radius: 20px;
+
+    p{
+        margin: 0;
+        font-weight: bold;
+        line-height: 142%;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .message {
+
+        padding: 10px 100px;
+        width: 600px;
+    }
+}

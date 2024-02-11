@@ -13,7 +13,7 @@ import benefitsTasks from "./benefits.js";
 export default function Tasks() {
   return (
     <div className="container">
-      <section className="flex-center">
+      <section>
         <h3>
           Ми з командою зібрали в одному каналі перевірені фріланс-сайти, котрі
           дійсно платять за виконання завдань.
@@ -40,7 +40,7 @@ export default function Tasks() {
       </section>
       <section>
         <h2>Відгуки</h2>
-        <ul>
+        <ul className="reviewList">
           {reviews.map((item) => (
             <Reviews rev={item} />
           ))}
