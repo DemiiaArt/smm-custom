@@ -2,7 +2,6 @@ import React from 'react';
 import "./Reviews.scss"
 
 export default function Reviews({rev}) {
-  console.log(rev.photo);
   return (
     <li key={rev.id} className='revCard'>
       <p className='revName'>{rev.name}</p>

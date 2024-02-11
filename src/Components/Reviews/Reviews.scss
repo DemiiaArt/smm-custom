@@ -1,7 +1,7 @@
 @import "../../Theme/variables.scss";
 
 .revCard {
-    border: 3px solid $text_regular_dark;
+    border: 1px solid $text_regular_dark;
     border-radius: 20px;
     overflow: hidden;
 
@@ -11,18 +11,18 @@
     .revName {
         font-weight: bold;
         margin: 10px 0;
+        font-size: 16px;
     }
 
     .revText {
-        font-size: 16px;
+        font-size: 14px;
         margin: 10px 10px;
         flex-grow: 1;
-        // text-align: start;
     }
 
     .revImgBox {
         position: relative;
-        padding-top: 100%;
+        padding-top: 50%;
 
         img {
             max-width: none;
@@ -37,29 +37,26 @@
 
 @media (min-width: 480px) {
     .revCard {
-        width: calc((100% - 20px) / 2);
-    }
-}
-
-@media (min-width: 768px) {
-    .revCard {
         width: 100%;
         flex-direction: row;
+        justify-content: flex-start;
 
         .revName {
-            width: 150px;
+            align-self: center;
+            padding: 0 10px;
+            margin: 30px 5px;
+            min-width: 80px;
         }
 
         .revText {
-            // font-size: 16px;
-            // margin: 10px 10px;
-            flex-grow: 0;
             text-align: start;
+            align-self: center;
+            // max-width: 50vw;
         }
 
         .revImgBox {
             position: relative;
-            padding-right: 150px;
+            padding-right: 100px;
             padding-top: 0;
     
             img {
@@ -70,6 +67,25 @@
                 inset: 0;
                 object-fit: cover;
             }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .revCard {
+        border: 2px solid $text_regular_dark;
+        .revName {
+            min-width: 100px;
+            margin: 30px 20px;
+            font-size: 20px;
+        } 
+
+        .revText {
+            font-size: 16px;
+        }
+
+        .revImgBox {
+            padding-right: 150px;
         }
     }
 }

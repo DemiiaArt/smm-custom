@@ -15,7 +15,7 @@
         font-weight: bold;
         line-height: 142%;
 
-        span {
+        a {
             text-decoration: underline;
         }
     }
@@ -23,8 +23,14 @@
 
 @media (min-width: 768px) {
     .message {
-
         padding: 10px 100px;
         width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .message {
+        padding: 10px 60px;
+        width: 500px;
     }
 }

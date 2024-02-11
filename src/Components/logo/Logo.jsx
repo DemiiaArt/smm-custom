@@ -1,11 +1,12 @@
 import React from 'react'
-import logo from './Demiia.Design.svg';
+import logoWhite from './Demiia.Design.svg';
+import logoBlack from './DarkLogo.svg';
 import "./Logo.scss"
 
-export default function Logo() {
+export default function Logo({color}) {
   return (
     <a href="/" className='logoBox'>
-      <img src={logo} alt="logo"/>
+      <img src={color === "white" ? logoWhite : logoBlack} alt="logo"/>
     </a>
   )
 }

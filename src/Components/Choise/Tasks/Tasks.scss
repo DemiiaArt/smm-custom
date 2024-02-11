@@ -38,6 +38,59 @@
     }
 }
 
+.wrapper {
+    // position: relative;
+    // background-image: url(./media/bubbles.png);
+    // background-repeat: no-repeat;
+    // background-position-x: left;
+    // background-position-y: 750px;
+}
+
+.flex-center {
+    position: relative;
+
+    [alt="bubbles"] {
+        position: absolute;
+        top: 157vw;
+        left: -80px;
+        width: 140px;
+    }
+}
+@media (min-width: 480px) {
+    .flex-center {
+        [alt="bubbles"] {
+            top: 60vw;
+            width: 35vw;
+        }
+    }
+}
+@media (min-width: 768px){
+    .flex-center {
+        [alt="bubbles"] {
+            top: 350px;
+            left: -250px;
+            width:400px;
+        }
+    }
+}
+@media (min-width: 992px){
+    .flex-center {
+        [alt="bubbles"] {
+            top: 480px;
+            left: -150px;
+            width:400px;
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .flex-center {
+        [alt="bubbles"] {
+            top: 500px;
+            left: 50px;
+            width: 350px;
+        }
+    }
+}
 
 .phoneExaples {
     img {
@@ -60,6 +113,7 @@
 }
 
 @media (min-width: 768px) {
+
     .phoneExaples {
         display: flex;
         justify-content: space-around;
@@ -72,11 +126,20 @@
         img {
             height: 350px;
             width: auto;
+
+        }
+        &~.message {
+            margin: 0 auto;
         }
     }
 }
 
 @media (min-width: 992px) {
+    .flex-center {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .phoneExaples {
         justify-content: center;
         gap: 50px;
@@ -84,8 +147,13 @@
         img {
             height: 468px;
         }
+
+        &~.message {
+            align-self: flex-end;
+            margin: 0 10vw 0;
+        }
     }
-}
+    }
 
 .reviewList {
     display: flex;
@@ -102,10 +170,22 @@
     }
 }
 
+.questList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-content: flex-start;
+}
+
 @media (min-width: 768px) {
     .reviewList {
         flex-direction: column;
         flex-wrap: nowrap;
-        
+        padding: 0 10vw;
+    }
+
+    .questList {
+        padding: 0 10vw;
     }
 }
+

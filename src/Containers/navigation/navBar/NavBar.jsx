@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <nav className="nav">
-      <Logo />
+      <Logo color='white'/>
       <div
         className={collapseIconClose? "collapseIcon tapClose" : "collapseIcon"}
         onClick={() => {
@@ -21,7 +21,7 @@ export default function NavBar() {
       </div>
       <ul className={menuOpen ? "isOpen" : ""}>
         <li>
-          <a href="#directions">Напрямки</a>
+          <a href="#choisesHeader">Напрямки</a>
         </li>
         <li>
           <a href="/services">Додаткові послуги</a>

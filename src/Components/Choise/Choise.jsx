@@ -8,7 +8,7 @@ export default function Choise({currentChoise, changeSelectedOption}) {
       <div className="container">
         <ChoiseCard onChoise={changeSelectedOption} />
       </div>
-      <div className="choisesHeader">
+      <div className="choisesHeader" id="choisesHeader">
         <span onClick={()=> changeSelectedOption('Tasks')} className={currentChoise === 'Tasks' ? " choose" : ""}>
           <h3 className={currentChoise === 'Tasks' ? "accent" : ""}>Завдання</h3>
         </span>

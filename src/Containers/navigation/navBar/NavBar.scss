@@ -6,15 +6,7 @@
     padding: 10px 0;
     justify-content: baseline;
     position: relative;
-
-    .logoBox {
-        padding-top: 10px;
-
-        img {
-            width: 122px;
-            height: 38px;
-        }
-    }
+    scroll-behavior: smooth;
 
     .collapseIcon {
         span {
@@ -96,16 +88,6 @@
             }
         }
 
-        // img {
-        //     width: 30px;
-        //     height: 30px;
-        // }
-
-        // .instLogo {
-        //     background: none;
-        //     padding: 0;
-        // }
-
         &.isOpen {
             visibility: visible;
 
@@ -124,14 +106,6 @@
         padding: 20px 0;
         justify-content: baseline;
 
-        .logoBox {
-            padding-top: 10px;
-
-            img {
-                width: 210px;
-                height: 62px;
-            }
-        }
 
         .collapseIcon {
             display: none;

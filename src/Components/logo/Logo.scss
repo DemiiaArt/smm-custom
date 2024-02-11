@@ -1,0 +1,21 @@
+@import '../../Theme/variables.scss';
+
+.logoBox {
+    padding-top: 10px;
+
+    img {
+        width: 122px;
+        height: 38px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logoBox {
+        padding-top: 10px;
+
+        img {
+            width: 210px;
+            height: 62px;
+        }
+    }
+}
