@@ -39,7 +39,12 @@
 }
 
 @media (min-width: 768px) {
+    .darkBg {
+        padding: 0;
+    }
+
     .choisesHeader {
+        padding-top: 40px;
         gap: 20px;
 
         h3 {

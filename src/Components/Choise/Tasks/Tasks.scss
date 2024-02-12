@@ -1,4 +1,9 @@
+.wrapper {
+    padding-top: 20px;
+}
+
 .benefits--row {
+    padding-top: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -20,9 +25,8 @@
 
 @media (min-width: 768px) {
     .benefits--row {
-        // display: flex;
+
         flex-wrap: nowrap;
-        // justify-content: space-between;
         gap: 20px;
         align-items: baseline;
     
@@ -38,13 +42,6 @@
     }
 }
 
-.wrapper {
-    // position: relative;
-    // background-image: url(./media/bubbles.png);
-    // background-repeat: no-repeat;
-    // background-position-x: left;
-    // background-position-y: 750px;
-}
 
 .flex-center {
     position: relative;

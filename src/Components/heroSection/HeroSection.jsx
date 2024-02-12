@@ -37,9 +37,9 @@ export default function HeroSection() {
             Знахідка для тих, хто хоче заробляти в телефоні
           </p>
           <div className="bubbles">
-            <Bubble text="Підійде для новачків" size="130px" />
-            <Bubble text="Вільний графік " size="105px" />
-            <Bubble text="Різні напрямки" size="120px" />
+            <Bubble text="Підійде для новачків"/>
+            <Bubble text="Вільний графік "/>
+            <Bubble text="Різні напрямки" />
           </div>
         </div>
       </div>
