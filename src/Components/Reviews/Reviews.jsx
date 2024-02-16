@@ -7,7 +7,7 @@ export default function Reviews({rev}) {
       <p className='revName'>{rev.name}</p>
       <q className='revText'>{rev.text}</q>
       {rev.photo && (<div className="revImgBox">
-        <img src={`${process.env.PUBLIC_URL}/mediaTasks/${rev.photo}`} alt="фото відгуку" />
+        <img src={`${process.env.PUBLIC_URL}/media/${rev.photo}`} alt="фото відгуку" />
       </div>)}
     </li>
   )

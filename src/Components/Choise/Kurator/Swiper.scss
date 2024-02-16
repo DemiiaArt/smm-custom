@@ -1,0 +1,44 @@
+@import '../../../Theme/variables.scss';
+
+.swiper {
+    width: 100%;
+    max-width: 610px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+
+
+  .autoplay-progress {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: $text_regular_dark;
+  }
+  
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke:#DCDC00;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }

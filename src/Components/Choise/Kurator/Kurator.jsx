@@ -4,18 +4,23 @@ import Benefits from "../../Benefits/Benefits.jsx";
 import MessageKurator from "../../MessageKurator/MessageKurator.jsx";
 import Reviews from "../../Reviews/Reviews.jsx";
 import Question from "../../Questions/Question.jsx";
-import Card from "./Card.jsx";
+import decor from "./media/decor.png"
 
-import reviews from "./reviews.js"
+import reviews from "./reviews.js";
 import questions from "./questions.js";
+import benefits from "./benefits.js";
+import SwiperCards from "./Swiper.jsx";
+import Card from "./Card.jsx";
 
 export default function Kurator() {
   return (
-    <div className="container">
+    <div className="container container--white">
       <div className="flex-between">
         <div className="programm">
-          <p>Програма</p>
-          <ul>
+          <p className="accent" id="programLetters">
+            Програма
+          </p>
+          <ul className="generalProgramm">
             <li>
               Блок 1. Створення сторінки
               <ul>
@@ -46,26 +51,35 @@ export default function Kurator() {
           </ul>
         </div>
         <div className="benefits--column">
-          <Benefits />
-          <Benefits />
-          <Benefits />
-          <Benefits />
-          <Benefits />
+          {benefits.map((item) => (
+            <Benefits
+              icon={item.icon}
+              fontSiz={item.fontSiz}
+              fontSizWindow={item.fontSizWindow}
+              text={item.text}
+              key={item.id}
+            />
+          ))}
         </div>
+      <img src={decor} alt="decor" />
       </div>
       <section>
         <h2>Обери свій тариф</h2>
+        <div className="tarifsCardsLarge">
+          <Card tarif="silver"/>
+          <Card tarif="gold"/>
+          <Card tarif="platinum"/>
+          <Card tarif="diamond"/>
+        </div>
         <div className="tarifsCards">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          
+          <SwiperCards />
         </div>
         <MessageKurator />
       </section>
       <section>
         <h2>Відгуки</h2>
-        <ul>
+        <ul className="reviewList">
           {reviews.map((item) => (
             <Reviews rev={item} />
           ))}
@@ -73,7 +87,7 @@ export default function Kurator() {
       </section>
       <section>
         <h2>Поширені питання</h2>
-        <ul>
+        <ul className="questList">
           {questions.map((item) => (
             <Question quest={item} />
           ))}

@@ -8,11 +8,13 @@
 .choisesHeader {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     padding: 20px 0 0;
     scroll-behavior: smooth;
 
     span {
         width: 100%;
+        max-width: 680px;
         height: 80px;
         background: $white_gradient;
         border-radius: 20px 20px 0 0;
@@ -21,6 +23,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin: 0 -30px;
 
         &.choose {
             background: $white;

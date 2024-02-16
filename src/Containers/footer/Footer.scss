@@ -1,7 +1,9 @@
 @import '../../Theme/variables.scss';
 
 footer {
-    background: $dark_gradient;
+    &.container {
+        background: $white_gradient_top;
+    }
 }
 
 .more {

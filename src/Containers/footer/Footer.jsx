@@ -8,8 +8,8 @@ import arrow from "./arrow.png"
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="container more">
+    <footer className="container">
+      <div className=" more">
         <img src={diamonds} alt="diamonds bg" />
         <img src={oneDianomd} alt="diamonds bg" />
         <div className="moreBox">
@@ -17,7 +17,7 @@ export default function Footer() {
           <p>Завітай на сторінку твого майбутнього куратора <a href="/">@demiia.design</a> та напиши в повідомленні що саме тебе цікавить</p>
         </div>
       </div>
-      <div className="container footer-nav">
+      <div className="footer-nav">
         <Logo color='white' />
         <div className="rowText">
           <p className='coursive accent'>Почни свій шлях вже сьогодні</p>

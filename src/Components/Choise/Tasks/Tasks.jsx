@@ -14,9 +14,9 @@ import benefitsTasks from "./benefits.js";
 export default function Tasks() {
   return (
     <div className="wrapper">
-      <div className="container">
+      <div className="container container--white">
         <section>
-          <h3>
+          <h3 className="firstHeader"> 
             Ми з командою зібрали в одному каналі перевірені фріланс-сайти,
             котрі дійсно платять за виконання завдань.
           </h3>

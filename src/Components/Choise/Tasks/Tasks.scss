@@ -1,5 +1,11 @@
-.wrapper {
-    padding-top: 20px;
+
+
+.firstHeader {
+    margin: 0;
+
+    section & {
+        padding-top: 30px;
+    }
 }
 
 .benefits--row {

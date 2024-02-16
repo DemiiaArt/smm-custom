@@ -1,1 +1,71 @@
+@import '../../../Theme/variables.scss';
 
+.tarifCard {
+    background: $bg_dark;
+    border-radius: 20px;
+    // margin: 0 -30px;
+    padding: 0 20px 10px;
+    
+    
+
+    h6 {
+        text-align: start;
+        font-size: 40px;
+    }
+
+    p {
+        margin: -10px 0 10px;
+        font-size: 22px;
+        text-align: end;
+    }
+
+    .bottom-cursive {
+        margin: 10px 0 20px;
+        color: #DCDC00;
+        font-weight: 300;
+    }
+}
+
+#tarifCard__list {
+    list-style-type: none;
+    text-align: start;
+    font-size: 14px;
+    line-height: 180%;
+
+    li {
+        padding-left: 30px;
+        position: relative;
+        color: $text_disabled;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 20px;
+            height: 20px;
+            background: url('./media/cube.png') center center no-repeat;
+        }
+
+        &.active {
+            
+            color: $text_regular_white;
+            &:before {
+                background: url('./media/cubeActive.png') center center no-repeat;
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .tarifCard{
+        padding: 0 40px 10px;
+
+        h6 {
+            font-size: 50px;
+        }
+    }
+    #tarifCard__list {
+        font-size: 18px;
+    }
+}

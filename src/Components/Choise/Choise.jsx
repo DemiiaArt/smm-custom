@@ -7,7 +7,6 @@ export default function Choise({currentChoise, changeSelectedOption}) {
     <div className="darkBg">
       <div className="container">
         <ChoiseCard onChoise={changeSelectedOption} />
-      </div>
       <div className="choisesHeader" id="choisesHeader">
         <span onClick={()=> changeSelectedOption('Tasks')} className={currentChoise === 'Tasks' ? " choose" : ""}>
           <h3 className={currentChoise === 'Tasks' ? "accent" : ""}>Завдання</h3>
@@ -15,6 +14,7 @@ export default function Choise({currentChoise, changeSelectedOption}) {
         <span onClick={()=> changeSelectedOption('Kurator')} className={currentChoise === 'Kurator' ? " choose " : ""}>
           <h3 className={currentChoise === 'Kurator' ? "accent" : ""}>Кураторство/Інста-магазин</h3> 
         </span>
+      </div>
       </div>
     </div>
   );
