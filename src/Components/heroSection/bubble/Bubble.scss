@@ -6,7 +6,7 @@
     padding: 4px;
     display: inline-block;
     aspect-ratio: 1;
-    max-width: 120px;
+    // max-width: 120px;
 }
 
 .circle__inside {
@@ -45,7 +45,7 @@
 }
 @media (min-width: 992px) {
     .circle__outside {
-        max-width: 150px;
+        // max-width: 150px;
     }
     .circle__inside {
         padding: 10px;

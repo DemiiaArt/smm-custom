@@ -1,0 +1,38 @@
+@import '../../Theme/variables.scss';
+
+@media (max-width: 767px) {
+    .fourChoises {
+        a {
+            width: auto;
+            height: auto;
+
+            &.choose {
+                width: 70vw;
+                z-index: 5;
+                flex-grow: 2;
+            }
+
+            .unChoosing {
+                margin: 0 20px;
+            }
+
+            .fullName {
+                display: none;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .fourChoises {
+        a {
+            .fullName {
+                display: inline-block;
+            }
+        }
+    }
+}

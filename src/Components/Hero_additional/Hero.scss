@@ -1,0 +1,99 @@
+@import '../../Theme/variables';
+
+.hero {
+    min-height: 600px;
+}
+
+@media (min-width: 1280px) {
+    .heroLayout {
+        padding: 130px 0 50px;
+        width: 61vw;
+    }
+}
+
+.heroLayout {
+    position: relative;
+    // width: 100%;
+}
+
+#circle-1,
+#circle-2,
+#circle-3,
+#circle-4 {
+    position: absolute;
+}
+
+#circle-1 {
+    .circle__inside {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#circle-2 {
+    .circle__inside {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+#circle-3 {
+    .circle__inside {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+#circle-4 {
+    .circle__inside {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    #circle-1 {
+        bottom: -100px;
+        left: 350px;
+
+        .circle__inside {
+            width: 115px;
+            height: 115px;
+
+        }
+    }
+
+    #circle-2 {
+        bottom: -50px;
+        left: 70%;
+        .circle__inside {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+    #circle-3 {
+        
+        bottom: 150px;
+        left: 90%;
+        .circle__inside {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    #circle-4 {
+        bottom: -130px;
+        left: 110%;
+        .circle__inside {
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
+
+// @media (min-width: 1440px) {}

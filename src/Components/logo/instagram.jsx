@@ -2,12 +2,14 @@ import React from 'react'
 import instLogo from './instLogo.svg'
 import "./instagram.scss"
 
+import {Link} from 'react-router-dom'
+
 
 export default function Inst () {
   return (
-    <a href='/' className='instLogo'>
+    <Link to='/'  className='instLogo'>
         <img src={instLogo} alt="Logo instagram"/>
-    </a>
+    </Link>
   )
 }
 

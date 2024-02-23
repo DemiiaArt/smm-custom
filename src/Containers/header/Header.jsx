@@ -4,7 +4,7 @@ import NavBar from '../navigation/NavBar/NavBar.jsx'
 
 export default function Header() {
   return (
-    <header>
+    <header >
       <div className="container">
         <NavBar />
       </div>

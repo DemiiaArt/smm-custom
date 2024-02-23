@@ -1,11 +1,11 @@
 import React from 'react'
 import './Bubble.scss'
 
-export default function Bubble(props) {
+export default function Bubble({text, addId}) {
   return (
-    <div className='circle__outside' >
+    <div className='circle__outside' id={addId}>
       <div className='circle__inside'>
-        <p>{props.text}</p>
+        <p>{text}</p>
       </div>
     </div>
   )
