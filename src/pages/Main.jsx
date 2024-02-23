@@ -6,6 +6,7 @@ import Header from '../Containers/Header/Header.jsx'
 import Tasks from '../Components/Choise/Tasks/Tasks.jsx'
 import Kurator from '../Components/Choise/Kurator/Kurator.jsx';
 import Footer from '../Containers/footer/Footer.jsx'
+import FooterMore from '../Containers/footer/FooterMore.jsx';
 
 export default function Main() {
     const  [selectOption, setSelectOption] = useState('Tasks')
@@ -22,6 +23,7 @@ export default function Main() {
         changeSelectedOption={changeSelectedOption}
       />
       {selectOption === "Tasks" ? <Tasks /> : <Kurator />}
+      <FooterMore />
       <Footer />
     </>
   );

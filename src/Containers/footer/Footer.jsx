@@ -2,15 +2,15 @@ import React from "react";
 import "./Footer.scss";
 import Logo from "../../Components/logo/Logo.jsx";
 import Inst from "../../Components/logo/instagram.jsx";
-import diamonds from "./3diamonds.png";
-import oneDianomd from "./1diamond.png";
+// import diamonds from "./3diamonds.png";
+// import oneDianomd from "./1diamond.png";
 import arrow from "./arrow.png";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer className="container">
-      <div className=" more">
+      {/* <div className=" more">
         <img src={diamonds} alt="diamonds bg" />
         <img src={oneDianomd} alt="diamonds bg" />
         <div className="moreBox">
@@ -21,7 +21,7 @@ export default function Footer() {
             цікавить
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="footer-nav">
         <Logo color="white" />
         <div className="rowText">
