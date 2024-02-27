@@ -3,7 +3,7 @@ import "./Consult.scss";
 
 export default function Consult() {
   return (
-    <div className="container">
+    <div className="container container-bg">
       <section>
         <h2>Консультація з дизайнером</h2>
         <p>
@@ -13,7 +13,7 @@ export default function Consult() {
         </p>
         <ul className="aspects">
           <li>
-            <h4>Визначення бренду та ідентичності</h4>
+            <h4 className="accent">Визначення бренду та ідентичності</h4>
             <p>
               {" "}
               Допомога у визначенні ключових елементів бренду, що включає
@@ -22,7 +22,7 @@ export default function Consult() {
             </p>
           </li>
           <li>
-            <h4>Консультації щодо трендів</h4>
+            <h4 className="accent">Консультації щодо трендів</h4>
             <p>
               {" "}
               Підказки та поради щодо актуальних трендів у дизайні,
@@ -30,7 +30,7 @@ export default function Consult() {
             </p>
           </li>
           <li>
-            <h4>Оптимізація профілю</h4>
+            <h4 className="accent">Оптимізація профілю</h4>
             <p>
               {" "}
               Підказки щодо заповнення профілю з урахуванням ключової інформації
@@ -38,7 +38,7 @@ export default function Consult() {
             </p>
           </li>
           <li>
-            <h4>Створення контент-стратегії</h4>
+            <h4 className="accent">Створення контент-стратегії</h4>
             <p>
               {" "}
               Допомога у розробці плану контенту, вибір тем, типів публікацій та

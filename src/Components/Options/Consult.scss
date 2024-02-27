@@ -1,0 +1,66 @@
+@import '../../Theme/variables.scss';
+
+section {
+    padding: 20px 0;
+    &>p {
+        text-indent: 20px;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    h2 {
+        margin: 0 0 30px;
+    }
+
+    h3 {
+        margin: 0 0 20px ;
+    }
+}
+
+.aspects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+        border: 1px solid #8f628f;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    p {
+        font-size: 14px;
+        margin: 0;
+    }
+    h4 {
+        margin: 0 0 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        gap: 10px;
+
+    }
+
+    .aspects {
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        li {
+            width: calc((100% - 20px)/2);
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        padding: 30px 60px;
+        gap: 30px;
+
+    }
+}

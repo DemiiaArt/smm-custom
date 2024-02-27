@@ -4,9 +4,9 @@ import Benefits from '../Benefits/Benefits.jsx'
 
 export default function Target() {
   return (
-    <div className="container">
-      <section>
-        <h2>Послуги таргетолога та налаштування реклами</h2>
+    <div className="container container-bg">
+      <section className="info halfWidth">
+        <h2>Послуги таргетолога, налаштування реклами</h2>
         <p>
           {" "}
           Таргетолог допоможе Вам знайти та привернути увагу саме тих, хто

@@ -8,7 +8,7 @@ import visExmplLg from "./visualExmplLg.png";
 export default function Visual() {
   return (
     <div className="container container-bg">
-      <section className="info">
+      <section className="info-visual">
         <div className="wrapText">
           <h2>Оформлення візуалу сторінки</h2>
           <p>

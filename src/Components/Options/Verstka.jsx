@@ -3,8 +3,8 @@ import "./Verstka.scss";
 
 export default function Verstka() {
   return (
-    <div className="container">
-      <section>
+    <div className="container container-bg">
+      <section className="halfWidth">
         <h2>Створення веб-сторінок та лендінгів</h2>
         <p>
           {" "}
@@ -26,7 +26,7 @@ export default function Verstka() {
         <p>
           <strong>
             {" "}
-            Зверніть увагу, що створення контенту для наповнення сайту (тексти,
+            Зверніть увагу, що створення контенту для наповнення сайту (текст,
             фото, відео) та реєстрація доменного імені не входитимуть у
             вартість.
           </strong>
