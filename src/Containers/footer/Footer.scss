@@ -1,54 +1,9 @@
 @import '../../Theme/variables.scss';
 
-footer {
-    &.container {
-        background: $white_gradient_top;
-    }
-}
-
-// .more {
-//     position: relative;
-
-//     img {
-//         width: 100%;
-
-//         &~img {
-//             width: 100px;
-//         }
-//     }
-
-//     .moreBox {
-//         position: absolute;
-//         top: 100px;
-//         right: 30px;
-//         left: 30px;
-//         background: $white;
-//         border: 2px solid #FF49FE;
-//         border-radius: 20px;
-//         text-align: start;
-//         padding: 10px;
-//         font-size: 14px;
-
-//         h4 {
-//             margin: 0;
-//             font-size: 16px;
-//         }
-
-//         p {
-//             margin: 5px 0 0;
-//             line-height: 142%;
-//         }
-
-//         a {
-//             font-weight: bold;
-//         }
-//     }
-// }
 
 .footer-nav {
     padding-bottom: 20px;
 
-    // background: $dark_gradient;
     .rowText {
         display: flex;
         align-items: center;
@@ -70,28 +25,6 @@ footer {
 }
 
 @media (min-width: 480px) {
-    // .more {
-    //     display: flex;
-    //     flex-direction: column;
-
-    //     img {
-    //         width: 360px;
-
-    //         &~img {
-    //             align-self: flex-end;
-    //             margin-top: -50px;
-    //         }
-    //     }
-
-    //     .moreBox {
-    //         top: 80px;
-    //         margin-left: 30px;
-    //         max-width: 400px;
-    //         left: auto;
-    //         right: 15vw;
-    //     }
-    // }
-
     .footer-nav {
         padding-bottom: 40px;
 
@@ -104,19 +37,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-    // .more {
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    //     .moreBox {
-    //         top: 100px;
-    //         max-width: 550px;
-    //         font-size: 16px;
-
-    //         h4 {
-    //             font-size: 20px;
-    //         }
-    //     }
-    // }
 
     .footer-nav {
         padding-bottom: 50px;
@@ -129,15 +49,3 @@ footer {
         }
     }
 }
-
-// @media (min-width: 992px) {
-//     .more {
-//         justify-content: center;
-//         gap: 400px;
-
-//         .moreBox {
-//             top: 80px;
-//             right: 20vw;
-//     }
-// }
-// }

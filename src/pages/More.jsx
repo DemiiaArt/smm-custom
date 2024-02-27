@@ -13,11 +13,13 @@ export default function More() {
       <Header />
       <Hero />
       <Options />
-
-      <Outlet />
-
-      <MessageKurator />
-      <Footer />
+      <div className="dark-bg">
+        <Outlet />
+        <div className="footerBox container">
+          <MessageKurator />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }

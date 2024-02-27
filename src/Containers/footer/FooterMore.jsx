@@ -1,12 +1,13 @@
 import React from "react";
+import './FooterMore.scss'
 
 import diamonds from "./3diamonds.png";
 import oneDianomd from "./1diamond.png";
 
 export default function FooterMore() {
   return (
-    <div className="container">
-      <div className=" more">
+    <div className=" more">
+        <div className="container">
         <img src={diamonds} alt="diamonds bg" />
         <img src={oneDianomd} alt="diamonds bg" />
         <div className="moreBox">

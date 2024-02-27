@@ -1,0 +1,100 @@
+@import '../../Theme/variables.scss';
+
+.container-bg {
+    background: $white;
+}
+
+.info {
+    padding: 20px 0;
+    p {
+        text-indent: 20px;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    h2 {
+        margin: 0 0 5vw;
+    }
+
+    h3 {
+        margin: 0 0 20px ;
+    }
+}
+
+[alt="Visual"] {
+    width: 100%;
+}
+
+.proc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: baseline;
+
+    li {
+        width: calc((100% - 20px)/2);
+    }
+
+    &~p {
+        margin: 16px 0 0;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .info {
+        display: flex;
+        gap: 10px;
+
+        h2 {
+            width: 150%;
+        }
+    }
+
+    [alt="Visual"] {
+        width: 300px;
+    }
+
+    .proc {
+        li {
+            width: calc((100% - 60px)/4);
+        }
+    
+        &~p {
+            margin: 16px 0 0;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        padding: 30px 60px;
+
+        h3 {
+            margin: 0 0 30px;
+        }
+    }
+    .info {
+        gap: 30px;
+        padding: 30px 60px;
+
+        h2 {
+            width: 150%;
+        }
+    }
+
+    [alt="Visual"] {
+        width: 400px;
+    }
+
+    .proc {
+        gap: 40px;
+
+        li {
+            width: calc((100% - 120px)/4);
+        }
+    }
+}
