@@ -12,7 +12,7 @@ import addItemsBig from './addItemsBig.png'
 import addItemsSmall from './addItemsSmall.png'
 
 export default function HeroSection() {
-  return (
+    return (
     <section className="hero">
       <div className="container">
         <div className="heroImg">
@@ -32,7 +32,7 @@ export default function HeroSection() {
             />
             <img src={heroImg} alt="phone"></img>
           </picture>
-          <img src={addItemsBig} alt="big" id="addBig"/>
+          <img  src={addItemsBig} alt="big" id="addBig"/>
           <img src={addItemsSmall} alt="small" id="addSmall"/>
         </div>
         <div className="heroLayout">

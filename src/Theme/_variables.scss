@@ -19,5 +19,38 @@ $white_gradient_top: linear-gradient(180deg, #ffffff 0%, rgba(217, 217, 217, 0.0
 $dark_gradient: linear-gradient(360deg, #1C1C1C 1.77%, rgba(255, 255, 255, 0.00) 90.49%);
 
 
-
+@keyframes heroItemsSmall {
+    0% {
+        transform: rotate(20deg);
+        
+    }
+    25% {
+        transform: rotate(-45deg);
+        scale: 1.1;
+    }
+    50% {
+        transform: rotate(-100deg);
+    }
+    75% {
+        transform: rotate(-60deg);
+        scale: 1;
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+@keyframes heroItemsBig {
+    0% {
+        transform: rotate3d(0deg);
+        scale: 0.8;
+    }
+    50% {
+        transform: rotate3d(1, 1, 1, -30deg);
+        scale: 1;
+    }
+    100% {
+        transform: rotate3d(0deg);
+        scale: 0.8;
+    }
+}
 

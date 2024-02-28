@@ -24,6 +24,9 @@
         top: 0;
         right: 40%;
         width: 130px;
+
+        animation: heroItemsBig 25s ease-in-out infinite;
+
     }
     #addSmall {
         position: absolute;
@@ -31,8 +34,12 @@
         right: 25%;
         width: 80px;
         z-index: 5;
+
+        animation: heroItemsSmall 50s ease-in-out infinite;
     }
 }
+
+
 
 @media (min-width: 480px) {
     .heroImg {
