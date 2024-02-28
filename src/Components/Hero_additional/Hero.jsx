@@ -12,7 +12,7 @@ export default function Hero() {
           <p className="accent coursive">
             Не втрачай час та скористайся <br /> допомогою спеціаліста!
           </p>
-          
+            
             <Bubble text="Сучасні методи " addId='circle-1'/>
             <Bubble text="Робота на результат" addId='circle-2'/>
             <Bubble text="Індивідуальний підхід" addId='circle-3'/>
@@ -23,3 +23,4 @@ export default function Hero() {
     </section>
   );
 }
+
