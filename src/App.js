@@ -2,12 +2,7 @@ import React from "react";
 import "./App.css";
 import Main from "./pages/Main.jsx";
 import More from "./pages/More.jsx";
-// import Choise from './Components/Choise/Choise.jsx';
-// import HeroSection from './Components/HeroSection/HeroSection.jsx';
-// import Header from './Containers/Header/Header.jsx'
-// import Tasks from './Components/Choise/Tasks/Tasks.jsx'
-// import Kurator from './Components/Choise/Kurator/Kurator.jsx';
-// import Footer from './Containers/footer/Footer.jsx'
+
 
 import Visual from './Components/Options/Visual.jsx'
 import Consult from './Components/Options/Consult.jsx'
