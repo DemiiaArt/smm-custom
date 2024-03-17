@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/DemiiaArt/smm-custom/static/css/main.0d391f67.css",
+    "main.js": "/DemiiaArt/smm-custom/static/js/main.b8114186.js",
+    "static/media/visualExmpl.png": "/DemiiaArt/smm-custom/static/media/visualExmpl.5feeef824c7e9097aebe.png",
+    "static/media/visualExmplLg.png": "/DemiiaArt/smm-custom/static/media/visualExmplLg.9e6fe5febeffb801fe75.png",
+    "static/media/games.png": "/DemiiaArt/smm-custom/static/media/games.26d4e1b69dc790f88462.png",
+    "static/media/visualExmplSmall.jpg": "/DemiiaArt/smm-custom/static/media/visualExmplSmall.4ddc39ab31869c58c181.jpg",
+    "static/media/Caveat-Bold.woff": "/DemiiaArt/smm-custom/static/media/Caveat-Bold.13777abac02fdc11a447.woff",
+    "static/media/Caveat-Regular.woff": "/DemiiaArt/smm-custom/static/media/Caveat-Regular.a488401b12be25e41a83.woff",
+    "static/media/two_phones.png": "/DemiiaArt/smm-custom/static/media/two_phones.76610564ae6cf04c5ff2.png",
+    "static/media/Caveat-Bold.woff2": "/DemiiaArt/smm-custom/static/media/Caveat-Bold.36f58096ef47f9cfca7e.woff2",
+    "static/media/Caveat-Regular.woff2": "/DemiiaArt/smm-custom/static/media/Caveat-Regular.c6638be3fa071e0fcb5e.woff2",
+    "static/media/1280_2x.png": "/DemiiaArt/smm-custom/static/media/1280_2x.a00d73ea92aa5c0ef1a6.png",
+    "static/media/KyivTypeTitling-Regular.woff": "/DemiiaArt/smm-custom/static/media/KyivTypeTitling-Regular.9a9705ab8119f1e3ec8b.woff",
+    "static/media/KyivTypeTitling-Light.woff": "/DemiiaArt/smm-custom/static/media/KyivTypeTitling-Light.8365cfd5dcd298b2f03f.woff",
+    "static/media/KyivTypeTitling-Bold.woff": "/DemiiaArt/smm-custom/static/media/KyivTypeTitling-Bold.a6a8972601975eadb757.woff",
+    "static/media/3diamonds.png": "/DemiiaArt/smm-custom/static/media/3diamonds.47a905e9b54e56157f21.png",
+    "static/media/KyivTypeTitling-Regular.woff2": "/DemiiaArt/smm-custom/static/media/KyivTypeTitling-Regular.4a7bb0bb0b8afbf14c77.woff2",
+    "static/media/KyivTypeTitling-Light.woff2": "/DemiiaArt/smm-custom/static/media/KyivTypeTitling-Light.d3018b254b198719ae6f.woff2",
+    "static/media/KyivTypeTitling-Bold.woff2": "/DemiiaArt/smm-custom/static/media/KyivTypeTitling-Bold.85ba27f810f7c9925f5b.woff2",
+    "static/media/DarkLogo.svg": "/DemiiaArt/smm-custom/static/media/DarkLogo.561cf99fef22188e66c611389e72b2d0.svg",
+    "static/media/bubbles.png": "/DemiiaArt/smm-custom/static/media/bubbles.dcc02c51ca61ff6520fa.png",
+    "static/media/Demiia.Design.svg": "/DemiiaArt/smm-custom/static/media/Demiia.Design.67c0d397b5c5a8efbcf2016ea3957aa3.svg",
+    "static/media/768_2x.png": "/DemiiaArt/smm-custom/static/media/768_2x.934c665f7690f085f226.png",
+    "static/media/1280.png": "/DemiiaArt/smm-custom/static/media/1280.bfee4963a642e98a3821.png",
+    "static/media/icomoon.svg?3shn37": "/DemiiaArt/smm-custom/static/media/icomoon.8719858a6d8e5ae93edb.svg",
+    "static/media/375_2x.png": "/DemiiaArt/smm-custom/static/media/375_2x.de62daa7c8493d511f82.png",
+    "static/media/decor.png": "/DemiiaArt/smm-custom/static/media/decor.53d2b80b7073af1b61f5.png",
+    "static/media/icomoon.eot?3shn37": "/DemiiaArt/smm-custom/static/media/icomoon.6b50edead6801a5dac21.eot",
+    "static/media/icomoon.woff?3shn37": "/DemiiaArt/smm-custom/static/media/icomoon.2d86ff47f2a58009fc6d.woff",
+    "static/media/icomoon.ttf?3shn37": "/DemiiaArt/smm-custom/static/media/icomoon.a0c32bb74d289d32928a.ttf",
+    "static/media/instLogo.svg": "/DemiiaArt/smm-custom/static/media/instLogo.c5144ff198d9e99d31728de6db5c787e.svg",
+    "index.html": "/DemiiaArt/smm-custom/index.html",
+    "main.0d391f67.css.map": "/DemiiaArt/smm-custom/static/css/main.0d391f67.css.map",
+    "main.b8114186.js.map": "/DemiiaArt/smm-custom/static/js/main.b8114186.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d391f67.css",
+    "static/js/main.b8114186.js"
+  ]
+}
