@@ -23,7 +23,7 @@ export default function NavBar() {
       </div>
       <ul className={menuOpen ? "isOpen" : ""}>
         <li>
-          <Link to="/">Напрямки</Link>
+          <Link to="/#choisesHeader">Напрямки</Link>
         </li>
         <li>
           <Link to="/More/Visual">Додаткові послуги</Link>
